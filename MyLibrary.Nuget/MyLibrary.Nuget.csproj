@@ -5,7 +5,7 @@
 
     <PackageId>MyLibraries.Nuget</PackageId>
     <Version>1.0.1</Version>
-    <Authors>Houssem Dellai</Authors>
+    <Authors>Apple Team</Authors>
     <Description>Test project for Nuget and CI/CD</Description>
     <IsPackable>true</IsPackable>
     
