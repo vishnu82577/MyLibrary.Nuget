@@ -1,0 +1,25 @@
+trigger: none
+pool:
+  name: pool1
+stages:
+- stage: CI
+  displayName: CI Stage
+  jobs:
+  - job: Build
+    displayName: Build
+    steps:
+    - script: echo This is a Build Job
+      displayName: 'Build Project'
+
+- stage: CD
+  displayName: CD Stage
+  jobs:
+  - deployment: Deploy
+    displayName: Deploy
+    environment: development
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - script: echo Hello world
+            displayName: 'Build Project'
