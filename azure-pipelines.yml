@@ -2,7 +2,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-16.04'
+  name: Pool1
 
 stages:
 - stage: Build_Stage
@@ -37,4 +37,4 @@ stages:
         command: 'push'
         packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
         nuGetFeedType: 'internal'
-        publishVstsFeed: '0e019b52-a82e-42d9-ae86-cefcdc87e7a8/a5d58dff-2828-4b90-9a31-f4a4c53f2c4b'
+        publishVstsFeed: '77fda57e-5402-4efb-8d1b-7eb94d19203d'
