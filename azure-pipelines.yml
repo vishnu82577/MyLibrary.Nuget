@@ -2,7 +2,7 @@ trigger:
 - master
 
 pool:
-  name: Pool1
+  name: testpool
 
 stages:
 - stage: Build_Stage
